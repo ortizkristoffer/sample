@@ -1,0 +1,422 @@
+#menu{
+    display: none;
+    visibility: hidden;
+}
+
+.toggle{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 20px;
+    left: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #ffff;
+    box-shadow: 0 0 0  10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle i{
+    font-size: 2rem;
+}
+
+#back-btn{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    z-index: 2000;
+    top: 15px;
+    margin-left: 24rem;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #ffff;
+    box-shadow: 0 0 0  10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1400px) {
+    body{
+        padding: 1.5rem 10rem;
+    }
+    .header{
+        margin-left: 26rem;
+        width: 97rem;
+        
+    }
+    .side-bar{
+        width: 35rem
+    }
+    .main-div section{
+        width: 105rem;
+        padding-left: 6rem;
+    }
+
+    #attack, #cia, img{
+        width: 65rem;
+
+    }
+    
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .img-text .text{       
+        width: 62rem
+    }
+    
+    .search-form{
+        width: 60rem;
+    }
+
+}
+@media only screen and (max-width: 1290px) {
+    body{
+        padding: 1.5rem 10rem;
+    }
+    .header{
+        margin-left: 21rem;
+        width: 95rem;
+        
+    }
+    .side-bar{
+        width: 30rem
+    }
+    .main-div section{
+        width:98rem;
+        padding-left: 1rem;
+    }
+
+    #attack, #cia, img{
+        width: 65rem;
+
+    }
+    
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .img-text .text{       
+        width: 62rem
+    }
+    
+    .search-form{
+        width: 40rem;
+    }
+ 
+}
+@media only screen and (max-width: 1030px) {
+    body{
+        padding: 1.5rem 10rem;
+    }
+    .header{
+        margin-left: 21rem;
+        width: 69rem;
+        
+    }
+    .side-bar{
+        width: 30rem
+    }
+    .main-div section{
+        
+        width: 72rem;
+        padding-left: 1rem;
+    }
+
+    #attack, #cia, img{
+        width: 50rem;
+
+    }
+    
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .img-text .text{       
+        width: 62rem
+    }
+    
+    .search-form{
+        width: 40rem;
+    }
+
+}
+@media only screen and (max-width: 900px) {
+    body{
+        padding: 1.5rem 10rem;
+    }
+    .header{
+        margin-left: 21rem;
+        width: 48rem;
+        
+    }
+    .side-bar{
+        width: 30rem
+    }
+    .main-div section{
+        display: flex;
+        flex-direction: column;
+        width: 51rem;
+        padding-left: 1rem;
+    }
+
+    #attack, #cia, img{
+        width: 40rem;
+
+    }
+    
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .img-text .text{       
+        width: 40rem
+    }
+    .search-form{
+        width: 25rem;
+    }
+}
+@media only screen and (max-width: 860px) {
+    body{
+        padding: 1.5rem 10rem;
+    }
+    .header{
+        margin-left: 21rem;
+        width: 49rem;
+        
+    }
+    .side-bar{
+        width: 30rem
+    }
+    .main-div section{
+        display: flex;
+        flex-direction: column;
+        width: 52rem;
+        padding-left: 1rem;
+    }
+
+    #attack, #cia, img{
+        width: 40rem;
+
+    }
+    
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .img-text .text{       
+        width: 40rem
+    }
+    .search-form{
+        width: 25rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        padding: 0;
+    }
+    .main-div section{
+        display: flex;
+        flex-direction: column;
+        width: 45rem;
+        padding-left: 1rem;
+    }
+    .header{
+        margin: 0;
+        width: 37rem;
+    }
+    .side-bar {
+     display: none;
+     
+    }
+    .main-div{
+        position: absolute;
+        left: 0;
+        padding: 0;
+    }
+    .courses{
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        width: 35rem;
+    }
+
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .img-text .text{
+       width: 33rem
+    }
+    .header h1{
+        display: none;
+    }
+    .header .search-form{
+        margin-left: 5rem;
+        width: 30rem
+    }
+}
+@media only screen and (max-width: 550px) {
+    body{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .main-div section{
+        display: flex;
+        flex-direction: column;
+        width: 53rem;
+        padding-left: 1rem;
+    }
+    .header{
+        margin: 1rem;
+        width: 52rem;
+    }
+    .side-bar {
+     display: none;
+     
+    }
+    .main-div{
+        position: absolute;
+        left: 0;
+        padding: 0;
+    }
+    .courses{
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        width: 35rem;
+    }
+
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .img-text .text{
+       width: 33rem
+    }
+    .header h1{
+        display: none;
+    }
+    .header .search-form{
+        margin-left: 5rem;
+        width: 30rem
+    }
+}
+@media only screen and (max-width: 480px) {
+    body{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .main-div section{
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        padding-left: 1rem;
+    }
+    .header{
+        margin: 0;
+        width: 41rem;
+    }
+    .side-bar {
+     display: none;
+     
+    }
+    .main-div{
+        position: absolute;
+        left: 0;
+        padding: 0;
+    }
+    .courses{
+        padding: 0;
+        margin: 0;
+    }
+    #attack, #cia, img{
+        width: 35rem;
+    }
+
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .img-text .text{
+       width: 33rem
+    }
+    .header h1{
+        display: none;
+    }
+    .header .search-form{
+        margin-left: 5rem;
+        width: 30rem
+    }
+}
+@media only screen and (max-width: 380px) {
+    body{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .main-div section{
+        display: flex;
+        flex-direction: column;
+        width: 36.5rem;
+        padding-left: 1rem;
+    }
+    .header{
+        margin: 0;
+        width: 38rem;
+    }
+    .side-bar {
+     display: none;
+     
+    }
+    .main-div{
+        position: absolute;
+        left: 0;
+        padding: 0;
+    }
+    .courses{
+        padding: 0;
+        margin: 0;
+    }
+    #attack, #cia, img{
+        width: 30rem;
+    }
+
+    .img-text{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .img-text .text{
+       width: 33rem
+    }
+    .header h1{
+        display: none;
+    }
+    .header .search-form{
+        margin-left: 5rem;
+        width: 30rem
+    } 
+
+}
