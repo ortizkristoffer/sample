@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PRELIM</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="script.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header class="header">
+   
+        <section class="flex">
+         <h1>Prelims</h1>
+           <form action="search.html" method="post" class="search-form">
+             <div id="search-form">
+                 <input id="input-box" type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+                 <button type="submit" class="fas fa-search"></button>
+             </div>
+              
+              <div class="result-box">
+     
+              </div>
+           </form>
+     
+           <div class="icons">
+            
+              <div id="user-btn" class="fas fa-user"></div>
+              
+           </div>    
+        </section>
+     
+    </header>   
+    <input type="checkbox" id="menu"> 
+    <div class="toggle"><i class="fas fa-bars" id="menu-icon"></i></div>
+    <div class="side-bar">
+        
+        
+         <h1 id="title">ELMS</h1>
+         <nav class="navbar">
+            
+            <div id="first">
+                <a id="modules">
+                    <span>Information Systems Security</span>
+                    <i class="fa-solid fa-caret-down" id="down"></i>
+                    <i class="fa-solid fa-caret-up" id="up"></i>
+                    
+                </a>
+
+                <ul id="list">
+                    <li id="one">Cybersecurity</li>
+                    <li id="second">Introduction to Risks, Threats, and Vulnerabilities</li>
+                    <li id="third">The CIA Triad</li>
+                    <li id="fourth">Data Classification Standards</li>
+                </ul>
+
+                
+            </div>
+
+            <div id="first">
+                <a id="second-module">
+                    <span>Security Concepts and Goals</span>
+                    <i class="fa-solid fa-caret-down" id="second-down"></i>
+                    <i class="fa-solid fa-caret-up" id="second-up"></i>
+                </a>
+
+                <ul id="second-list">
+                    <li id="one-2">Subjects and Objects of Security</li>
+                    <li id="second-2">Security Objectives</li>
+                    <li id="third-2">IT Security Framework</li>
+                    <li id="fourth-2">Security Architecture</li>
+                </ul>
+
+                
+            </div>
+             <a href="about.html"><span>Course Syllabus</span></a>
+             <a href="courses.html"><span>About Us</span></a>
+             <a href="teachers.html"><span>Settings</span></a>
+       
+         </nav>
+     
+    </div>
+    <div class="main-div" id="first-module-div">
+        <section class="courses" id="first-topic">
+            <div class="first-box">
+                 <h1>Cybersecurity</h1>     
+                 <p>Defends systems, networks, and programs from cyberattacks.</p>
+                 
+                 <h1>Cyberattacks</h1>     
+                 <p>Usually try to steal sensitive data, extort money from users, or disrupt company activities.</p>    
+    
+                 <h1>These are the following tasks of cybersecurity professionals:</h1>     
+                 <ul>
+                    <li>Using all channels to monitor technology and security threats.</li>
+                    <li>Being aware through analyzing and evaluating threats.</li>
+                    <li>Checking all systems for any potential issues.</li>
+                    <li>Setting up security and a protocol.</li>
+                    <li>Creating reports for shareholders.</li>
+                    <li>Spreading awareness of security and its importance within the organization.</li>
+                 </ul>
+             </div>
+         
+             <div class="div-start">
+                 <h1>Four (4) Cybersecurity Career Path</h1>
+                  <div class="second-box">
+                     <div class="square">
+                         <div class="text-div">
+                             <h2>Security Architect</h2>
+                             <button id="text-btn-show1"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide1" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         
+                         <div class="output" id="first-p">
+                             <p>Protects company computers and predicts computer hacker methods. They work at irregular 
+                                times and follow security and attacking trends. IT specialists believe former hackers are 
+                                the greatest security architects because they understand hackers.
+                            </p>           
+                         </div>
+                     </div>  
+                     <div class="square">
+                         <div class="text-div">
+                             <h2>Security Consultant</h2>
+                             <button id="text-btn-show2"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide2" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         <div class="output" id="second-p">
+                            <p>Advise and manage security practices to protect a company's assets. The expert evaluates 
+                                security risks and vulnerabilities and creates action plans.</p>
+                         </div>
+                     </div> 
+                     <div class="square">
+                         <div class="text-div">
+                             <h2>Ethical Hacker</h2>
+                             <button id="text-btn-show3"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide3" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         <div class="output" id="third-p">
+                            <p>Also known as White-hat hackers who are authorized to get into computer systems, networks, 
+                                and apps to find vulnerabilities that bad hackers can attack.</p>
+                         </div>
+                     </div> 
+                     <div class="square">
+                         <div class="text-div">
+                             <h2>Chief Information Security Officer (CISO)</h2>
+                             <button id="text-btn-show4"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide4" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         <div class="output" id="fourth-p">
+                            <p>Organizational data and information security are managed by the CISO. CISOs must identify 
+                                their daily duties. Examples include data loss, program, access, and security activities.</p>
+                         </div>
+                     </div>              
+                  </div>
+             </div>
+        </section>
+    
+        <section class="courses" id="second-topic">
+            <div class="first-box"><h1>Introduction to Risks, Threats, and Vulnerabilities</h1></div>
+            <div class="first-box image">
+                 <h1>THE ANATOMY OF CYBERATTACK</h1>     
+                 <img src="attack.PNG" alt="The Anatomy of Cyberattack" id="attack">
+        
+             </div>
+         
+             <div class="div-start">
+                  <div class="second-box">
+                     <div class="square">
+                         <div class="text-div">
+                             <h2>Reconaissance</h2>
+                             <button id="text-btn-show12"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide12" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         
+                         <div class="output" id="first-p-2">
+                             <p>Hackers usually begin by collecting details about their target organization, such as network 
+                                ranges, IP addresses, domain names, and key employee emails, especially those in IT. If they 
+                                can't find these emails, they send phishing emails to other employees. They then scan for network 
+                                vulnerabilities, which can take months. Once they gain access through these vulnerabilities or via 
+                                compromised email accounts, they proceed to the next stage of their attack.
+                            </p>           
+                         </div>
+                     </div>  
+                     <div class="square">
+                         <div class="text-div">
+                             <h2>Attack</h2>
+                             <button id="text-btn-show22"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide22" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         <div class="output" id="second-p-2">
+                            <p>Once hackers gain access to the network, they aim to move freely within it. To do this, they need higher 
+                                access privileges, so they use tools like rainbow tables to steal credentials and elevate their access 
+                                to administrator levels. With these privileges, hackers can navigate the entire network undetected. 
+                                They then steal sensitive information to sell online, encrypt data to demand a ransom, or sometimes alter 
+                                or erase data for reasons other than financial gain.</p>
+                            <p>Note: Rainbow tables are pre-made lists of password hashes used to crack passwords quickly. Instead of guessing 
+                                each password one by one, hackers use these tables to find the matching password for a given hash faster.</p>
+                         </div>
+                     </div> 
+                     <div class="square"> 
+                         <div class="text-div">
+                             <h2>Expansion</h2>
+                             <button id="text-btn-show32"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide32" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         <div class="output" id="third-p-2">
+                            <p>Hackers use malicious programs to infiltrate all systems on the network. These programs let attackers hide 
+                                in multiple systems and regain access even after detection. This means hackers don't need higher access 
+                                privileges to stay in the network.</p>
+                         </div>
+                     </div> 
+                     <div class="square">
+                         <div class="text-div">
+                             <h2>Obfuscation</h2>
+                             <button id="text-btn-show42"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                             <button id="text-btn-hide42" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                         </div>
+                         <div class="output" id="fourth-p-2">
+                            <p>Hackers hide their tracks to mask the origins of the attack. They securely place their exploits in the system 
+                                to avoid detection. The goal is to confuse forensic experts. To do this, they use techniques like spoofing, 
+                                log cleaning, zombie accounts, and Trojan commands. Obfuscation is usually considered the final stage of a 
+                                cyber attack.</p>
+                         </div>
+                     </div>              
+                  </div>
+             </div>
+        </section>
+    
+        <section class="courses" id="third-topic">
+            <div class="first-box" >
+                <div class="image">
+                    <h1>THE CIA TRIAD</h1>     
+                    <img src="cia.PNG" alt="The CIA Triad" id="cia">
+    
+                </div>
+                 
+                 <div class="text">
+                    <h1>Confidentially</h1>
+                    <p>Ensures sensitive information is accessed only by authorized individuals and kept away from unauthorized ones. 
+                        Implemented with security mechanisms like usernames, passwords, ACLs, and encryption. Information is categorized 
+                        based on potential damage if leaked, and security measures are applied accordingly.</p>
+                    <h1>Integrity</h1>
+                    <p>Ensures information remains true and correct to its original state. Only authorized individuals can edit it, and it 
+                        remains unchanged when at rest. Implemented with data encryption and hashing. Backups and redundant systems are 
+                        crucial to maintain integrity against events like EMPs or server crashes.</p>
+                    <h1>Availability</h1>
+                    <p>Ensures information and resources are accessible to those who need them. Implemented through hardware maintenance, 
+                        software patching, and network optimization. Redundancy, failover, RAID, and high-availability clusters mitigate 
+                        the impact of hardware issues. Dedicated devices protect against downtime from attacks like DDoS.</p>
+                 </div>
+            </div>      
+        </section>
+       
+        <section class="courses" id="fourth-topic">
+            <div class="first-box">
+                <h1>Data Classification Standards</h1>
+                <p>This standard aims to provide a structure for categorizing data based on its sensitivity, value, and importance. 
+                    Data classification helps determine the essential security measures needed to protect it.</p>
+    
+                <div class="description">
+                    <div class="description-text">
+                        <h2>Understanding</h2>
+                        <p>The data management process starts with understanding what the data is, how it's classified, and where it's located. 
+                            This cycle is continuous, as data may change and require reclassification over time.</p>    
+                    </div>
+                    <div class="description-text">
+                        <h2>Creating</h2>
+                        <p>Involves collecting data, conducting experiments, observing, and measuring or simulating scenarios.</p>
+                    </div>
+                    <div class="description-text">
+                        <h2>Storing</h2>
+                        <p>Covers designing research, finding existing data, and capturing metadata to store data effectively.</p>
+                    </div>
+                    <div class="description-text">
+                        <h2>Using</h2>
+                        <p>Encompasses data entry, digitization, validation, cleaning, anonymization when necessary, description, interpretation, 
+                        and statistical analysis.</p>
+                    </div>
+                    <div class="description-text">
+                        <h2>Sharing</h2>
+                        <p>Involves distributing and promoting data, controlling access, establishing copyright, producing research outputs, preparing 
+                        data for preservation, and guiding users through the classification process.</p>
+                    </div>
+                    <div class="description-text">
+                        <h2>Archiving</h2>
+                        <p>Includes migrating data to suitable formats and mediums, backing up and storing data, creating metadata and documentation, 
+                        and managing archived data.</p>
+                    </div>
+                    <div class="description-text">
+                        <h2>Destroying</h2>
+                    <p>Involves disposing of data, destroying paper records and electronic media, and securely erasing electronic data.</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </div>
+
+    <div class="main-div" id="second-module-div">
+
+        <section class="courses" id="first-topic-2">
+            <div class="first-box"><h1>Security Concepts and Goals</h1></div>
+            <div class="first-box">
+                <h1>Subjects and Objects of Security</h1>
+                 <h1>People</h1>
+                 <p>Employees can create some of the greatest risks to cybersecurity. For example, cybercriminals might target 
+                    employees with phishing e- mails to get them to click on a malicious link or divulge credentials.  </p>
+                 
+                 <h1>Processes</h1>     
+                 <p>This layer of cybersecurity ensures that IT teams have strategies in place to proactively prevent and to respond 
+                    quickly and effectively in the event of a cybersecurity incident. A good incident response plan will provide an 
+                    organization with repeatable procedures and an operational approach to address cybersecurity incidents to recover
+                     business processes as quickly and efficiently as possible.</p>    
+    
+                 <h1>Technology</h1>     
+                 <p>It is important that IT teams do not implement isolated point solutions as they layer their defenses, but rather 
+                    select those tools based on their ability to be integrated and automated to create a security fabric that can facilitate 
+                    the rapid detection and mitigation of threats. 
+                </p>
+             </div>
+         
+             <div class="first-box second-box-div">
+                <h1>Emerging Technologies in Cybersecurity</h1>
+                 
+                <h1>1. Hardware authentication </h1>
+                <div class="img-text">
+                    <img src="1.PNG" alt="">
+                  
+                    <p class="text">Hardware authentication can be especially important when it comes to the Internet of Things (IoT) where the network of connected 
+                            devices ensures that any device that seeks to be connected has the rights for connectivity to that particular network. </p>
+                </div>
+
+                <h1>2. Cloud Technology </h1>
+                <div class="img-text">
+                    <img src="2.PNG" alt="">
+                  
+                    <p class="text">More business enterprises and government agencies have embraced cloud technology to store the vast amounts of information that they 
+                        generate daily. Both private and public entities have doubled up their data center security by the use of Infrastructure as a Service (IaaS) 
+                        services such as FireHost and Amazon. </p>
+                </div>
+
+                <h1>3. Deep Learning</h1>
+                <div class="img-text">
+                    <img src="3.PNG" alt="">
+                  
+                    <p class="text">Deep learning, just like behavior analytics, focuses on anomalous behavior. Whenever artificial intelligence and machine learning 
+                        systems are fed with the right data regarding potential systems security threats, they can make decisions on how to prevent hacks depending on 
+                        their immediate environment without any human point. </p>
+                </div>
+                
+             </div>
+
+             <div class="first-box">
+                <h1>Five (5) Types of Cybersecurity (Security rendered in the network)
+                </h1>
+
+                <div class="description">
+                    <div class="description-text second-description-text">
+                        <h2>Critical Infrastructure Security</h2>
+                        <p>This consists of the cyber-physical systems that modern societies rely on. 
+                        </p>   
+                        <p>Examples: Electricity grid, water purification traffic lights, shopping centers, and hospitals </p>
+                    </div>
+                    <div class="description-text second-description-text">
+                        <h2>Application Security</h2>
+                        <p> This is more accessible over networks, causing the adoption of security measures during the development phase to be an imperative phase of the project. 
+                        </p>
+                        <p>Examples: Antivirus programs, firewalls, and encryption 
+                        </p>
+                    </div>
+                    <div class="description-text second-description-text">
+                        <h2>Network Security</h2>
+                        <p>This ensures that internal networks are secured by protecting the infrastructure and inhibiting access to it.</p>
+                        <p>Examples: Extra logins, new passwords, and application security (firewalls, monitored Internet access, antispyware, antivirus) </p>
+                    </div>
+                    <div class="description-text second-description-text">
+                        <h2>Cloud Security</h2>
+                        <p>It is a software-based security tool that protects and monitors data in cloud resources. Cloud providers are constantly creating and implementing new security tools to help enterprise users better secure their data.</p>
+                        <p>Examples: Software as a Service, Infrastructure as a Service, private, on-site cloud, and virtualization 
+                        </p>
+                    </div>
+                    <div class="description-text second-description-text">
+                        <h2>Internet of Things (IoT) Security</h2>
+                        <p>IoT refers to a wide variety of critical and non-critical cyber-physical systems like appliances, sensors, televisions, Wi-Fi routers, printers, and security cameras. 
+                        </p>
+                        <p>Examples: Connected security systems, thermostats, cars, electronic appliances, and speaker systems </p>
+                    </div>
+                   
+                </div>
+                
+            </div>
+             
+        </section>
+    
+        <section class="courses" id="second-topic-2">
+            <div class="first-box"><h1>Security Objectives</h1></div>
+            <div class="first-box">
+                 <h1>Security Policy</h1>    
+                 <p>is a set of rules that applies to activities for the computer and communications resources that 
+                    belong to an organization. The security policy defines what an organization wants to protect and 
+                    what it expects of its system users.</p>
+                 
+             </div>
+             <div class="first-box">
+                <h1>Security Objectives </h1>
+                <h1>Resource Protection </h1>
+                <p>The resource protection scheme ensures that only authorized users can access objects on the system. 
+                    As such, carefully define the different categories of users that can access the system.</p>
+                    
+                <h1>Authentication</h1>
+                <p>The assurance or verification that the resource (human or machine) at the other end of the session really 
+                    is what it claims to be. Solid authentication defends a system against the security risk of impersonation, 
+                    in which a sender or receiver uses a false identity to access a system. </p>
+                    
+                <h1>Authorization</h1>
+                <p>This is an assurance that the person or computer at the other end of the session has permission to carry out 
+                    the request. Authorization is the process of determining who or what can access the system resources or perform 
+                    certain activities on a system.  </p>
+             
+                <h1>Integrity</h1>
+                <p>This is an assurance that the arriving information is the same as what was sent out. Understanding integrity requires 
+                    understanding the concepts of data integrity and system integrity. </p>
+                
+                <div>
+                    <h2>Data Integrity</h2>
+                    <p>Data is protected from unauthorized changes or tampering. Data integrity defends against the security risk of 
+                        manipulation, or the act of intercepting and changing information to which s/he is not authorized. </p>
+                    
+                    <h2>System Integrity</h2>
+                    <p>The system provides consistent and expected results with expected performance. </p>
+                </div>
+
+                <h1>Nonrepudiation </h1>
+                <p>This is the proof that a transaction occurred, or that a user sent or received a message. Both the sender and the 
+                    receiver agree that the exchange takes place. </p>
+                <h1>Confidentiality </h1>
+                <p>This is the assurance that sensitive information remains private and is not visible to an eavesdropper. 
+                    Confidentiality is critical to total data security. </p>
+                <h1>Auditing Security Activities</h1>
+                <p>These monitor security-relevant events to provide a log of both successful and unsuccessful (denied) access.</p>
+            </div>
+             
+        </section>
+    
+        <section class="courses" id="third-topic-2">
+            <div class="first-box"><h1>IT Security Framework </h1></div>
+            <div class="first-box" >
+                <h1>1. National Institute of Standards and Technology (NIST)</h1> 
+                <div class="image second-img">
+                       
+                    <img src="4.PNG" alt="The CIA Triad">
+    
+                </div>
+            
+                <p>It is a federal agency within the United States Department of Commerce. NIST’s mission is to develop and promote measurement, standards, and technology to enhance productivity, facilitate trade, and improve the quality of life. </p>
+                <div class="h2-list">
+                    <h2>The Cybersecurity Framework consists of three (3) main components:
+                    </h2>
+                    <ul>
+                        <li>Framework core – It describes expected cybersecurity procedures and results clearly.</li>
+                        <li>Framework implementation tiers – provide context for cybersecurity risk management in businesses.</li>
+                        <li>Framework profiles – These identify and prioritize cybersecurity improvements at an organization.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="first-box" >
+                <h1>2. ISO/IEC – 27000 family</h1> 
+                <div class="image second-img">
+                       
+                    <img src="5.PNG" alt="The CIA Triad">
+    
+                </div>
+            
+                <p>ISO 27000 is a systematic approach to managing sensitive information securely (also known as the Information Security Management System [ISMS]). It includes managing risk for people, processes, and IT systems. </p>
+                <div class="h2-list">
+                    <h2>ISO 27000 includes a six-part approach: 
+
+                    </h2>
+                    <ul>
+                        <li>Define a security policy. </li>
+                        <li>Define the scope of the ISMS. </li>
+                        <li>Conduct a risk assessment. </li>
+                        <li>Manage identified risks. </li>
+                        <li>Select control objectives and controls to be implemented. </li>
+                        <li>Prepare a statement of applicability. </li>
+                    </ul>
+                </div>
+            </div>  
+
+            <div class="first-box" >
+                <h1>3. Payment Card Industry Data Security Standard (PCI DSS)
+                    </h1> 
+                <div class="image second-img">
+                       
+                    <img src="6.PNG" alt="The CIA Triad">
+    
+                </div>
+            
+                <p>It was initiated to ensure businesses process card payments and to help reduce card fraud. </p>
+                <div class="h2-list">
+                    <h2>This payment standard has principle requirements, all of which are covered by these six (6) categories:  </h2>
+                    <ul>
+                        <li>Build and maintain a secure network.</li>
+                        <li>Protect card data.</li>
+                        <li>Maintain a vulnerability program.</li>
+                        <li>Implement strong access control measures.</li>
+                        <li>Regularly monitor and test networks.  </li>
+                        <li>Maintain an Information security policy  </li>
+                    </ul>
+                </div>
+            </div>  
+        </section>
+       
+        <section class="courses" id="fourth-topic-2">
+            <div class="first-box"><h1>Security Architecture</h1></div>
+            <div class="first-box">
+                <h1>Security architectures</h1>
+                <p>Unified designs that address a particular scenario's needs and risks. The timing and location of security controls are also specified while the design is usually repeatable.</p>
+                
+                <p>Security architecture includes structure and connections as well as the design concepts and security control specifications in distinct papers. ocation of security controls are also specified while the design is usually repeatable.</p>
+
+                <div class="h2-list">
+                    <h2>The key attributes of security architecture are as follows:
+
+                    </h2>
+                    <ul>
+                        <li>Benefits – Standardization makes security architecture affordable. Reusing controls reduces design costs.</li>
+                        <li>Form – Security architecture is similar to IT architecture but has several forms. Relationship graphs, principles, and typical controls are included.</li>
+                        <li>Drivers – Security controls are determined based on these four (4) factors: (Risk Management, Benchmarking and good practice, Financial, Legal and regulatory)</li>
+                    </ul>
+                </div>
+
+                <div class="h2-list">
+                    <h2>The key phases in the security architecture process are as follows:
+
+                    </h2>
+                    <ul>
+                        <li>Architecture Risk Assessment – evaluates essential assets, vulnerabilities, and security threats' business impact.</li>
+                        <li>Security Architecture and Design – Security service architecture supports corporate risk exposure targets.</li>
+                        <li>Implementation – It manages secure services and processes. Assurance services ensure runtime implementation matches security policy, standards, architecture, and risk management.</li>
+                        <li>Operations and Monitoring – Daily processes include threat, vulnerability, and threat management. Besides system security, the operational state is managed.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
