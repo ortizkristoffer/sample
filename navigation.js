@@ -94,7 +94,6 @@ four2.addEventListener("click", function(){
     scroll(fourtTopic2, secondDiv, firstDiv);
 });
 
-
 const menu = document.getElementById("menu-icon");
 const sidebar = document.getElementById("sideBar");
 const back = document.getElementById("back-btn");
@@ -113,3 +112,5 @@ function hideMenu(){
 menu.addEventListener("click", showMenu);
 back.addEventListener("click", hideMenu);
 
+down1.click();
+one.click();

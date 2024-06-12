@@ -2,25 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>PRELIM</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRELIM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="script.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <header class="header">
-   
         <section class="flex">
-         <h1>Prelims</h1>
            <form action="search.html" method="post" class="search-form">
              <div id="search-form">
                  <input id="input-box" type="text" name="search_box" required placeholder="search courses..." maxlength="100">
-                 <button type="submit" class="fas fa-search"></button>
+                 <button class="fas fa-search"></button>
              </div>
               
               <div class="result-box">
@@ -89,11 +87,11 @@
     </div>
     <div class="main-div" id="first-module-div">
         <section class="courses" id="first-topic">
-            <div class="first-box">
+            <div class="first-box scroll-link">
                  <h1>Cybersecurity</h1>     
                  <p>Defends systems, networks, and programs from cyberattacks.</p>
                  
-                 <h1>Cyberattacks</h1>     
+                 <h1 id="title_cyberattacks">Cyberattacks</h1>     
                  <p>Usually try to steal sensitive data, extort money from users, or disrupt company activities.</p>    
     
                  <h1>These are the following tasks of cybersecurity professionals:</h1>     
@@ -108,7 +106,7 @@
              </div>
          
              <div class="div-start">
-                 <h1>Four (4) Cybersecurity Career Path</h1>
+                 <h1 id="title_cybersecurity_career_paths">Four (4) Cybersecurity Career Path</h1>
                   <div class="second-box">
                      <div class="square">
                          <div class="text-div">
@@ -304,9 +302,8 @@
     </div>
 
     <div class="main-div" id="second-module-div">
-
         <section class="courses" id="first-topic-2">
-            <div class="first-box"><h1>Security Concepts and Goals</h1></div>
+            <div id="title_security_concepts" class="first-box"><h1>Security Concepts and Goals</h1></div>
             <div class="first-box">
                 <h1>Subjects and Objects of Security</h1>
                  <h1>People</h1>
@@ -558,5 +555,24 @@
 
     <script src="script.js"></script>
     <script src="navigation.js"></script>
+    <script src="search.js"></script>
+    <script>
+        // Function to handle scrolling to anchor links with an offset
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const offsetTop = targetElement.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

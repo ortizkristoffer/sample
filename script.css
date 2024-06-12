@@ -18,6 +18,7 @@
  html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
  }
  
  html::-webkit-scrollbar{
@@ -33,6 +34,7 @@
  body{
     background-color: var(--light-bg);
     padding-left: 20rem;
+    padding-right: 0px;
  }
  
  body.dark{
@@ -44,21 +46,22 @@
  }
  
  section{
+   margin-top: 50px;
     padding: 2rem;
     margin: 0;
     max-width: 1200px;
-
+   
  }
 
  .courses{
     margin-left: 20rem;
-   
+    padding-top: 80px;
  }
  
 
 
  .header{
-    position: relative;
+    position: fixed;
     top:0; left:0; right: 0;
     background-color: var(--white);
     z-index: 1000;
@@ -68,6 +71,18 @@
     transition: opacity 0.3s;
  }
  
+
+ /* .header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: var(--white);
+   border-bottom: var(--border);
+   color: white;
+   padding: 10px 0;
+   text-align: center;
+ } */
+
  .header h1{
     font-size: 2rem;
  }
@@ -75,17 +90,27 @@
  .header .flex{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: relative;
     height: 7.3rem
+ }
+
+ .fa-search {
+   margin-bottom: 8px;
  }
  
  #search-form{
    display: flex;
    margin-top: 10px;
    width: 100%;
-  
+   padding: 8px;
  }
+
+ .search-form {
+   width: 400px;
+   margin-right: 24px;
+ }
+
  .header .flex .search-form{
     border-radius: .5rem;
     background-color: var(--light-bg);
@@ -100,6 +125,7 @@
 
  .header .flex .search-form input{
     width: 100%;
+    margin-bottom: 8px;
     font-size: 1.8rem;
     color:var(--black);
     background:none;
@@ -189,9 +215,9 @@
     display: none;
  }
 
+
  .courses .div-start{
-    margin: 20px 0;
-    
+    margin: 20px 0;    
  }
 
  .courses .div-start .second-box, .first-box{
